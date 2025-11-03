@@ -1,0 +1,193 @@
+@import "../omarchy/current/theme/waybar.css";
+
+* {
+  background-color: transparent;
+  color: @foreground;
+
+  border: none;
+  border-radius: 0;
+  min-height: 0;
+  font-family: 'CaskaydiaMono Nerd Font';
+  font-size: 12px;
+}
+
+.modules-left {
+  margin-left: 8px;
+   background: @background;
+    border-radius:20px;
+    margin-top:5px;
+    padding:5px;
+    border: 2px solid dodgerblue;
+}
+
+.modules-right {
+  margin-right: 8px;
+    background: @background;
+    margin-top:5px;
+	padding-left:15px;
+    border: 2px solid dodgerblue;
+    border-radius:20px;
+}
+
+#workspaces button {
+  all: initial;
+  padding: 0 6px;
+  margin: 0 1.5px;
+  min-width: 9px;
+}
+
+#workspaces button.empty {
+  opacity: 0.5;
+}
+
+#battery,
+#pulseaudio,
+#custom-omarchy,
+#custom-screenrecording-indicator,
+#custom-update {
+  min-width: 12px;
+  margin: 0 7.5px;
+}
+
+#tray {
+  margin-right: 16px;
+}
+
+#bluetooth {
+  margin-right: 17px;
+}
+
+#network {
+  margin-right: 13px;
+}
+
+#custom-expand-icon {
+  margin-right: 20px;
+}
+
+tooltip {
+  padding: 5px;
+  background: @background;
+  border: 2px solid dodgerblue;
+  border-radius: 0px;
+}
+
+#custom-update {
+  font-size: 10px;
+}
+
+#clock {
+  margin-left: 8.75px;
+    min-width: 200px;
+    margin-top:5px;
+    border-radius:20px;
+    background: @background;
+    border: 2px solid dodgerblue;
+}
+
+#system-stats {
+  margin-left: 8.5px;
+  padding-left: 7px;
+  min-width: 380px;
+  margin-top:5px;
+  background: @background;
+  border: 2px solid dodgerblue;
+  border-radius:20px;
+}
+
+#audio-stats {
+  margin-left: 8.75px;
+  min-width: 85px;
+  margin-top:5px;
+  border-radius: 20px;
+  background: @background;
+  border: 2px solid dodgerblue;
+}
+
+#custom-weather {
+  margin-left: 8.75px;
+  margin-top: 5px;
+  border-radius: 20px;
+  min-width:220px;
+  background: @background;
+  border: 2px solid dodgerblue;
+}
+
+#custom-eur-huf {
+  margin-left: 8.75px;
+  margin-top: 5px;
+  border-radius: 20px;
+  min-width: 140px;
+  background: @background;
+  border: 2px solid dodgerblue;
+}
+
+#custom-btc-eur {
+  margin-left: 8.75px;
+  margin-top: 5px;
+  border-radius: 20px;
+  min-width: 120px;
+  background: @background;
+  border: 2px solid dodgerblue;
+}
+
+#custom-news-ticker {
+  margin-left: 8.75px;
+  margin-top: 5px;
+  border-radius: 20px;
+  min-width: 700px;
+  background: @background;
+  border: 2px solid dodgerblue;
+  padding: 0 10px;
+}
+
+#custom-news-ticker.error {
+  color: #ff6b6b;
+}
+
+#disk,
+#memory,
+#cpu {
+  padding: 0 5px;
+  margin: 0;
+}
+
+#audio-stats #pulseaudio,
+#audio-stats #custom-bluetooth-battery {
+  padding: 0 5px;
+  margin: 0;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+#custom-screenrecording-indicator {
+  min-width: 12px;
+  margin-left: 8.75px;
+  font-size: 10px;
+}
+
+#custom-screenrecording-indicator.active {
+  color: #a55555;
+}
+
+/* Hide all modules except workspaces on HDMI monitors */
+window#waybar.HDMI-A-1 .modules-center,
+window#waybar.HDMI-A-2 .modules-center,
+window#waybar.HDMI-A-1 .modules-right,
+window#waybar.HDMI-A-2 .modules-right {
+  opacity: 0;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+window#waybar.HDMI-A-1 #custom-omarchy,
+window#waybar.HDMI-A-2 #custom-omarchy {
+  opacity: 0;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+}
