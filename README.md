@@ -2,6 +2,15 @@
 
 [![Alt text](./images/waybar.png)](https://github.com/rkmaier/omarchy-waybar-rice)
 
+# Waybar modules used:
+- bluetooth audio battery
+- btc-eruo exchange rate
+- news ticker from rss links
+- weather
+- exchange
+- gpu load
+- system stats
+
 # Installation
 (*Make a backup of your waybar config*)
 
