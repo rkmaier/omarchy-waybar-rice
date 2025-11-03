@@ -1,5 +1,7 @@
 @import "../omarchy/current/theme/waybar.css";
 
+@define-color border dodgerblue;
+
 * {
   background-color: transparent;
   color: @foreground;
@@ -17,7 +19,7 @@
     border-radius:20px;
     margin-top:5px;
     padding:5px;
-    border: 2px solid dodgerblue;
+    border: 2px solid @border;
 }
 
 .modules-right {
@@ -25,7 +27,7 @@
     background: @background;
     margin-top:5px;
 	padding-left:15px;
-    border: 2px solid dodgerblue;
+    border: 2px solid @border;
     border-radius:20px;
 }
 
@@ -68,7 +70,7 @@
 tooltip {
   padding: 5px;
   background: @background;
-  border: 2px solid dodgerblue;
+  border: 2px solid @border;
   border-radius: 0px;
 }
 
@@ -82,7 +84,7 @@ tooltip {
     margin-top:5px;
     border-radius:20px;
     background: @background;
-    border: 2px solid dodgerblue;
+    border: 2px solid @border;
 }
 
 #system-stats {
@@ -91,7 +93,7 @@ tooltip {
   min-width: 380px;
   margin-top:5px;
   background: @background;
-  border: 2px solid dodgerblue;
+  border: 2px solid @border;
   border-radius:20px;
 }
 
@@ -101,7 +103,7 @@ tooltip {
   margin-top:5px;
   border-radius: 20px;
   background: @background;
-  border: 2px solid dodgerblue;
+  border: 2px solid @border;
 }
 
 #custom-weather {
@@ -110,7 +112,7 @@ tooltip {
   border-radius: 20px;
   min-width:220px;
   background: @background;
-  border: 2px solid dodgerblue;
+  border: 2px solid @border;
 }
 
 #custom-eur-huf {
@@ -119,7 +121,7 @@ tooltip {
   border-radius: 20px;
   min-width: 140px;
   background: @background;
-  border: 2px solid dodgerblue;
+  border: 2px solid @border;
 }
 
 #custom-btc-eur {
@@ -128,7 +130,7 @@ tooltip {
   border-radius: 20px;
   min-width: 120px;
   background: @background;
-  border: 2px solid dodgerblue;
+  border: 2px solid @border;
 }
 
 #custom-news-ticker {
@@ -137,7 +139,7 @@ tooltip {
   border-radius: 20px;
   min-width: 700px;
   background: @background;
-  border: 2px solid dodgerblue;
+  border: 2px solid @border;
   padding: 0 10px;
 }
 
