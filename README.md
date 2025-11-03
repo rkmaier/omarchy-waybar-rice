@@ -7,7 +7,7 @@
 - btc-eruo exchange rate
 - news ticker from rss links
 - weather
-- exchange
+- currency exchange
 - gpu load
 - system stats
 
