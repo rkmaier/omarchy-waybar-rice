@@ -3,7 +3,7 @@
 [![Alt text](./images/waybar.png)](https://github.com/rkmaier/omarchy-waybar-rice)
 
 # Requirements
-  (jq)[https://github.com/jqlang/jq] 
+  [jq](https://github.com/jqlang/jq) 
 
 # Waybar modules included:
 - bluetooth audio battery
