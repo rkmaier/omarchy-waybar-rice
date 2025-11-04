@@ -18,6 +18,7 @@
 ``
 git clone https://github.com/rkmaier/omarchy-waybar-rice
 ``
+
 ``
 cp -f ~/.config/waybar
 ``
