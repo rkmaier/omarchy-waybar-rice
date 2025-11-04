@@ -20,7 +20,11 @@ git clone https://github.com/rkmaier/omarchy-waybar-rice
 ``
 
 ``
-cp -f ~/.config/waybar
+cd omarchy-waybar-rice
+``
+
+``
+cp -f ./*  ~/.config/waybar
 ``
 
 Copy / Overwrite the files to your ~/.config/waybar folder 
