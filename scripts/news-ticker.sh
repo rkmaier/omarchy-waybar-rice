@@ -6,13 +6,13 @@
 # Configuration
 RSS_FEEDS=(
   "https://telex.hu/rss/archivum?filters=%7B%22parentId%22%3A%5B%22null%22%5D%7D&perPage=5"
-  "https://fetchrss.com/feed/aQfSuMb2hfZiaQfUNxmKAlFi.rss"
-  "https://fetchrss.com/feed/aQfSuMb2hfZiaQfUpTVXbXbi.rss"
+  "https://prohardver.hu/hirfolyam/anyagok/kategoria/it_cafe/rss.xml"
+  "https://www.portfolio.hu/rss/all.xml"
   )
 
 HEADLINES_FILE="/tmp/waybar-news-headlines"
 INDEX_FILE="/tmp/waybar-news-index"
-CACHE_DURATION=18000  # 30 minutes in seconds
+CACHE_DURATION=180  # 30 minutes in seconds
 TICKER_WIDTH=90  # Maximum characters to display
 
 # Handle navigation

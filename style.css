@@ -1,11 +1,10 @@
 @import "../omarchy/current/theme/waybar.css";
 
-@define-color border dodgerblue;
+@define-color border #77C175;
 
 * {
-  background-color: transparent;
+  background-color:transparent;
   color: @foreground;
-
   border: none;
   border-radius: 0;
   min-height: 0;
@@ -13,23 +12,30 @@
   font-size: 12px;
 }
 
+#waybar{
+	background-color: transparent;
+}
+tooltip, .modules-left,#custom-weather, .modules-right,#clock,#system-stats, #audio-stats, #custom-news-ticker, #custom-eur-huf, #custom-btc-eur{
+	border-radius:20px;
+	border: 2px solid @border;
+}
+
 .modules-left {
   margin-left: 8px;
-   background: @background;
-    border-radius:20px;
-    margin-top:5px;
-    padding:5px;
-    border: 2px solid @border;
+  background: @background;
+  margin-top:5px;
+  padding:5px;
+  border: 2px solid @border;
 }
 
 .modules-right {
   margin-right: 8px;
-    background: @background;
+    background: @moduleBg;
     margin-top:5px;
 	padding-left:15px;
     border: 2px solid @border;
-    border-radius:20px;
 }
+
 
 #workspaces button {
   all: initial;
@@ -56,7 +62,7 @@
 }
 
 #bluetooth {
-  margin-right: 17px;
+  margin-left: 8px;
 }
 
 #network {
@@ -69,9 +75,8 @@
 
 tooltip {
   padding: 5px;
-  background: @background;
-  border: 2px solid @border;
-  border-radius: 0px;
+  background: @moduleBg;
+
 }
 
 #custom-update {
@@ -82,9 +87,7 @@ tooltip {
   margin-left: 8.75px;
     min-width: 200px;
     margin-top:5px;
-    border-radius:20px;
-    background: @background;
-    border: 2px solid @border;
+    background: @moduleBg;
 }
 
 #system-stats {
@@ -92,53 +95,42 @@ tooltip {
   padding-left: 7px;
   min-width: 380px;
   margin-top:5px;
-  background: @background;
-  border: 2px solid @border;
-  border-radius:20px;
+  background: @moduleBg;
 }
 
 #audio-stats {
   margin-left: 8.75px;
   min-width: 85px;
   margin-top:5px;
-  border-radius: 20px;
-  background: @background;
-  border: 2px solid @border;
+  background: @moduleBg;
 }
 
 #custom-weather {
   margin-left: 8.75px;
   margin-top: 5px;
-  border-radius: 20px;
   min-width:220px;
-  background: @background;
-  border: 2px solid @border;
+  background: @moduleBg;
 }
 
 #custom-eur-huf {
   margin-left: 8.75px;
   margin-top: 5px;
-  border-radius: 20px;
   min-width: 140px;
-  background: @background;
-  border: 2px solid @border;
+  background: @moduleBg;
 }
 
 #custom-btc-eur {
   margin-left: 8.75px;
   margin-top: 5px;
-  border-radius: 20px;
   min-width: 120px;
-  background: @background;
-  border: 2px solid @border;
+  background: @moduleBg;
 }
 
 #custom-news-ticker {
   margin-left: 8.75px;
   margin-top: 5px;
-  border-radius: 20px;
   min-width: 700px;
-  background: @background;
+  background: @moduleBg;
   border: 2px solid @border;
   padding: 0 10px;
 }
