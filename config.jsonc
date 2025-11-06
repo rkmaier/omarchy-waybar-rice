@@ -5,7 +5,7 @@
   "spacing": 0,
   "height": 26,
   "modules-left": ["custom/omarchy", "hyprland/workspaces"],
-  "modules-center": ["custom/weather", "custom/eur-huf", "custom/btc-eur", "clock", "custom/news-ticker", "group/system-stats", "group/audio-stats", "custom/update", "custom/screenrecording-indicator"],
+  "modules-center": ["hyprland/language","custom/weather", "custom/eur-huf", "custom/btc-eur", "clock", "custom/news-ticker", "group/system-stats", "group/audio-stats", "custom/update", "custom/screenrecording-indicator"],
   "modules-right": [
     "group/tray-expander",
     "pulseaudio",
@@ -23,6 +23,11 @@
       "empty": "" // persistent (created by this plugin)
     },
     "all-outputs": false // recommended
+  },
+  "hyprland/language": {
+  "format": "{}",
+  "format-hu": "HU",
+  "format-en": "US",
   },
   "custom/omarchy": {
     "format": "<span font='omarchy'>\ue900</span>",

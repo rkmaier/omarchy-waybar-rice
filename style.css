@@ -1,6 +1,6 @@
 @import "../omarchy/current/theme/waybar.css";
 
-@define-color border #77C175;
+@define-color border #404146;
 @define-color moduleBg @background;
 
 * {
@@ -16,10 +16,12 @@
 #waybar{
 	background-color: transparent;
 }
-tooltip, .modules-left,#custom-weather, .modules-right,#clock,#system-stats, #audio-stats, #custom-news-ticker, #custom-eur-huf, #custom-btc-eur{
+
+#language, tooltip, .modules-left,#custom-weather, .modules-right,#clock,#system-stats, #audio-stats, #custom-news-ticker, #custom-eur-huf, #custom-btc-eur{
 	border-radius:20px;
 	border: 2px solid @border;
 }
+
 
 .modules-left {
   margin-left: 8px;
@@ -27,6 +29,13 @@ tooltip, .modules-left,#custom-weather, .modules-right,#clock,#system-stats, #au
   margin-top:5px;
   padding:5px;
   border: 2px solid @border;
+}
+
+#language {
+	padding:5px;
+	min-width:12px;
+	background: @moduleBg;
+	margin-top: 4px;
 }
 
 .modules-right {
