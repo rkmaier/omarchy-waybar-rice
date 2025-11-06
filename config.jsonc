@@ -12,8 +12,8 @@
     "network",
     "battery"
   ],
-  "hyprland/workspaces": {
-    "on-click": "activate",
+
+"hyprland/workspaces": {
     "format": "{icon}",
     "format-icons": {
       "urgent": "",
@@ -116,7 +116,7 @@
   },
   "clock": {
     "format": "{:%R | %Y %B %d}",
-    "format-alt": "{:%R - %A, %B %d}",
+    "format-alt": "{:%R - %Y.%m.%d}",
     "tooltip": false,
     "on-click-right": "omarchy-launch-floating-terminal-with-presentation omarchy-tz-select"
   },
